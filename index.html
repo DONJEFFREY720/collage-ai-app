@@ -1,59 +1,59 @@
 <html>
 
 <head>
-    <title>Collage Web App</title>
+    <title>My Selfie App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
     <link href="style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <center>
-            <a href="" id="link" download="myselfy.png"></a>
-            <h1>Collage Creator 
-           <img id="logo_img" src="https://cdn.dribbble.com/users/3996135/screenshots/14278948/collegeappicon_4x.jpg">
-            </h1>
-            <hr>
-            <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
-            <textarea id="textbox" class="form-control" readonly="true"></textarea><br>
-            <button class="btn btn-primary" onclick="start()">START</button>
-            
-            <div class="form-group">
-                <h3>Say "take my selfies"</h3>
-                <label>Your voice output : </label>
-    
+    <center>
+        <h1>Collage Web App </h1>
+        <hr>
+        <h4>Please press allow as soon as popup comes. After you give a voice command</h4>
+
+        <h3>Say "selfie" for Taking your selfie to make a Collage</h3>
+
+        <button class="btn btn-lg btn-primary" onclick="start()">Start</button>
+        <h4>Press the Start button</h4>
+
+        <label>Your webcam : </label>
+        <div id="camera"></div>
+
+        <br>
+
+        <label>Your selife Will Display Here: </label>
+        <br>
+        <div id="resultRow">
+            <div id="result1" class="column">
+                <img id="selfie1" src="">   
             </div>
-    
-            <p>Press the Start button</p>
-    
-            <label>Your webcam : </label>
-    
-            <br>
-            <h3>YOUR CAMERA WILL BE SHOWN HERE</h3>
-            <br>
-            <div id="camera">webcam.attach(camera);</div>
-            <br>
-    
-            <label>Your Collage Will Display Here: </label>
-    
-            <div id="result1">
-                <img id="pic1" src="https://media.istockphoto.com/id/1130904817/vector/photo-camera-banner.jpg?s=612x612&w=0&k=20&c=5OY260igue_KzBg2GxJeQQJHXqtnA10dB16GpfojSxI=">
+
+            <div id="result2" class="column">
+                <img id="selfie2" src="">   
             </div>
-            <div id="result2">
-                <img id="pic2" src="https://media.istockphoto.com/id/1385748238/photo/camera-lens-with-with-multi-colored-backlight-optics.jpg?b=1&s=170667a&w=0&k=20&c=DP4xawzl637KYUOrvyqSSfL5-wLUG--Wo_xBXeEvXFM=">
+
+            <div id="rslt3" class="column">
+                <img id="selfie3" src="">   
             </div>
-            <div id="result3">
-                <img id="pic3" src="https://media.istockphoto.com/id/1187951204/photo/camera-lens-with-red-and-blue-backlight-macro-photography-lenses-horizontal-photography.jpg?b=1&s=612x612&w=0&k=20&c=aI3_ea8jtZKEXsB241u4Cq_PEMDhney37AHx45bEVg0=">
-            </div>
-    
-        </center>
-        </div>
-        <script src="main.js"></script>
+       
+    </center>
+
+    <div class="copy_right_footer">
+        Developed by -DON JEFFREY
+      </div>
+    <script src="main.js"></script>
 </body>
 
+
+
 </html>
+
+<textarea id="textbox" class="form-control" readonly="true"></textarea>
